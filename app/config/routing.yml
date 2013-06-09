@@ -1,0 +1,8 @@
+kafe_admin:
+    resource: "@KafeAdminBundle/Resources/config/routing.yml"
+    prefix:   /
+
+kafe_armure_manager:
+    resource: "@KafeArmureManagerBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+parameters:
+#    kafe_armure_manager.example.class: Kafe\ArmureManagerBundle\Example
+
+services:
+#    kafe_armure_manager.example:
+#        class: %kafe_armure_manager.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

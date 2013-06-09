@@ -1,0 +1,3 @@
+kafe_admin_homepage:
+    pattern:  /Admin
+    defaults: { _controller: KafeAdminBundle:Admin:index }

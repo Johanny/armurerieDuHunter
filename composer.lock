@@ -3,8 +3,66 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "e67df720e8a1a2e0e6df41d91d788e48",
+    "hash": "7547823780581e91bc6fce93631e4d64",
     "packages": [
+        {
+            "name": "braincrafted/bootstrap-bundle",
+            "version": "dev-master",
+            "target-dir": "Bc/Bundle/BootstrapBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/braincrafted/bootstrap-bundle.git",
+                "reference": "v1.4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/v1.4.2",
+                "reference": "v1.4.2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "require-dev": {
+                "instaclick/php-code-sniffer": "dev-master",
+                "instaclick/symfony2-coding-standard": "dev-master",
+                "knplabs/knp-markdown-bundle": "dev-master",
+                "knplabs/knp-menu": "dev-master",
+                "knplabs/knp-menu-bundle": "dev-master",
+                "knplabs/knp-paginator-bundle": "dev-master",
+                "nikic/php-parser": "dev-master",
+                "phpmd/phpmd": "1.4.*"
+            },
+            "suggest": {
+                "knplabs/knp-menu": "Required to use KnpMenuBundle.",
+                "knplabs/knp-menu-bundle": "BraincraftedBootstrapBundle styles the menus provided by KnpMenuBundle.",
+                "knplabs/knp-paginator-bundle": "BraincraftedBootstrapBundle styles the pagination provided by KnpPaginatorBundle.",
+                "twitter/bootstrap": "Twitter Bootstrap provides the assets (images, CSS and JS)"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Bc\\Bundle\\BootstrapBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@eckerstorfer.co",
+                    "homepage": "http://braincrafted.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Twitter Bootstrap for Symfony2",
+            "keywords": [
+                "bootstrap"
+            ],
+            "time": "2013-04-12 23:57:05"
+        },
         {
             "name": "doctrine/common",
             "version": "2.3.0",
@@ -376,6 +434,17 @@
                 "sql"
             ],
             "time": "2013-04-26 18:42:52"
+        },
+        {
+            "name": "jquery/jquery",
+            "version": "1.10.1",
+            "dist": {
+                "type": "file",
+                "url": "http://code.jquery.com/jquery-1.10.1.js",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
         },
         {
             "name": "kriswallsmith/assetic",
@@ -803,23 +872,22 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.2.0",
+            "version": "v1.0.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "v1.2.0-RC1"
+                "reference": "v1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/v1.2.0-RC1",
-                "reference": "v1.2.0-RC1",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/v1.0.0",
+                "reference": "v1.0.0",
                 "shasum": ""
             },
             "require": {
-                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
-                "symfony/intl": ">=2.3-RC,<3.0"
+                "symfony/intl": ">=2.3,<3.0"
             },
             "type": "library",
             "autoload": {
@@ -847,7 +915,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-05-16 08:18:58"
+            "time": "2013-06-03 18:32:07"
         },
         {
             "name": "symfony/monolog-bundle",
@@ -1119,16 +1187,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.13.0",
+            "version": "v1.13.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "v1.13.0"
+                "reference": "v1.13.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.13.0",
-                "reference": "v1.13.0",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/v1.13.1",
+                "reference": "v1.13.1",
                 "shasum": ""
             },
             "require": {
@@ -1164,7 +1232,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-10 15:12:43"
+            "time": "2013-06-06 06:06:01"
         }
     ],
     "packages-dev": [
@@ -1174,9 +1242,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "braincrafted/bootstrap-bundle": 20
+    },
     "platform": {
         "php": ">=5.3.3"
     },

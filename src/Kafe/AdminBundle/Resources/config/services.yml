@@ -1,0 +1,7 @@
+parameters:
+#    kafe_admin.example.class: Kafe\AdminBundle\Example
+
+services:
+#    kafe_admin.example:
+#        class: %kafe_admin.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
