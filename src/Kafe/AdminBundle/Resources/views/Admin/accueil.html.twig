@@ -1,1 +1,12 @@
-{# empty Twig template #}
+{% extends "KafeAdminBundle::layout.html.twig" %}
+
+{% block title_page %}Accueil{% endblock %}
+
+{% block fil_ariane %}
+    <div class="breadcrumb_divider"></div>
+    <a class="current">Accueil</a>
+{% endblock %}
+
+{% block core_body %}
+    <p>Hey there</p>
+{% endblock %}

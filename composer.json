@@ -6,17 +6,6 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
-    "repositories": [ {
-        "type": "package",
-        "package": {
-            "name": "jquery/jquery",
-            "version": "1.10.1",
-            "dist": {
-                "url": "http://code.jquery.com/jquery-1.10.1.js",
-                "type": "file"
-            }
-        }
-    }],
     "require": {
         "php":                      ">=5.3.3",
         "symfony/symfony":          "2.3.*",
@@ -29,9 +18,7 @@
         "sensio/distribution-bundle":           "2.3.*",
         "sensio/framework-extra-bundle":        "2.3.*",
         "sensio/generator-bundle":              "2.3.*",
-        "incenteev/composer-parameter-handler": "~2.0",
-        "braincrafted/bootstrap-bundle":        "dev-master",
-        "jquery/jquery":                        "1.10.*"
+        "incenteev/composer-parameter-handler": "~2.0"
     },
     "scripts": {
         "post-install-cmd": [

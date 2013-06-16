@@ -3,66 +3,8 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7547823780581e91bc6fce93631e4d64",
+    "hash": "c363106839c5c068c5f84e425931ebc6",
     "packages": [
-        {
-            "name": "braincrafted/bootstrap-bundle",
-            "version": "dev-master",
-            "target-dir": "Bc/Bundle/BootstrapBundle",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/braincrafted/bootstrap-bundle.git",
-                "reference": "v1.4.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/v1.4.2",
-                "reference": "v1.4.2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "require-dev": {
-                "instaclick/php-code-sniffer": "dev-master",
-                "instaclick/symfony2-coding-standard": "dev-master",
-                "knplabs/knp-markdown-bundle": "dev-master",
-                "knplabs/knp-menu": "dev-master",
-                "knplabs/knp-menu-bundle": "dev-master",
-                "knplabs/knp-paginator-bundle": "dev-master",
-                "nikic/php-parser": "dev-master",
-                "phpmd/phpmd": "1.4.*"
-            },
-            "suggest": {
-                "knplabs/knp-menu": "Required to use KnpMenuBundle.",
-                "knplabs/knp-menu-bundle": "BraincraftedBootstrapBundle styles the menus provided by KnpMenuBundle.",
-                "knplabs/knp-paginator-bundle": "BraincraftedBootstrapBundle styles the pagination provided by KnpPaginatorBundle.",
-                "twitter/bootstrap": "Twitter Bootstrap provides the assets (images, CSS and JS)"
-            },
-            "type": "symfony-bundle",
-            "autoload": {
-                "psr-0": {
-                    "Bc\\Bundle\\BootstrapBundle": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Florian Eckerstorfer",
-                    "email": "florian@eckerstorfer.co",
-                    "homepage": "http://braincrafted.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Twitter Bootstrap for Symfony2",
-            "keywords": [
-                "bootstrap"
-            ],
-            "time": "2013-04-12 23:57:05"
-        },
         {
             "name": "doctrine/common",
             "version": "2.3.0",
@@ -436,17 +378,6 @@
             "time": "2013-04-26 18:42:52"
         },
         {
-            "name": "jquery/jquery",
-            "version": "1.10.1",
-            "dist": {
-                "type": "file",
-                "url": "http://code.jquery.com/jquery-1.10.1.js",
-                "reference": null,
-                "shasum": null
-            },
-            "type": "library"
-        },
-        {
             "name": "kriswallsmith/assetic",
             "version": "v1.1.1",
             "source": {
@@ -619,17 +550,17 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "target-dir": "Sensio/Bundle/DistributionBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "v2.3.0"
+                "reference": "v2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/v2.3.0",
-                "reference": "v2.3.0",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/v2.3.1",
+                "reference": "v2.3.1",
                 "shasum": ""
             },
             "require": {
@@ -665,17 +596,17 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "target-dir": "Sensio/Bundle/FrameworkExtraBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "v2.3.0"
+                "reference": "v2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/v2.3.0",
-                "reference": "v2.3.0",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/v2.3.1",
+                "reference": "v2.3.1",
                 "shasum": ""
             },
             "require": {
@@ -712,17 +643,17 @@
         },
         {
             "name": "sensio/generator-bundle",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "target-dir": "Sensio/Bundle/GeneratorBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioGeneratorBundle.git",
-                "reference": "v2.3.0"
+                "reference": "v2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/v2.3.0",
-                "reference": "v2.3.0",
+                "url": "https://api.github.com/repos/sensiolabs/SensioGeneratorBundle/zipball/v2.3.1",
+                "reference": "v2.3.1",
                 "shasum": ""
             },
             "require": {
@@ -756,7 +687,7 @@
                 }
             ],
             "description": "This bundle generates code for you",
-            "time": "2013-06-02 16:13:06"
+            "time": "2013-06-05 17:32:22"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -977,17 +908,17 @@
         },
         {
             "name": "symfony/swiftmailer-bundle",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "target-dir": "Symfony/Bundle/SwiftmailerBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/SwiftmailerBundle.git",
-                "reference": "v2.3.0-RC1"
+                "reference": "v2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/v2.3.0-RC1",
-                "reference": "v2.3.0-RC1",
+                "url": "https://api.github.com/repos/symfony/SwiftmailerBundle/zipball/v2.3.1",
+                "reference": "v2.3.1",
                 "shasum": ""
             },
             "require": {
@@ -1032,16 +963,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.3.0",
+            "version": "v2.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "v2.3.0"
+                "reference": "v2.3.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/v2.3.0",
-                "reference": "v2.3.0",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/v2.3.1",
+                "reference": "v2.3.1",
                 "shasum": ""
             },
             "require": {
@@ -1136,7 +1067,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2013-06-03 14:13:35"
+            "time": "2013-06-11 11:46:38"
         },
         {
             "name": "twig/extensions",
@@ -1242,9 +1173,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "braincrafted/bootstrap-bundle": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.3.3"
     },
