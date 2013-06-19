@@ -40,13 +40,16 @@
         {{ render(controller("KafeAdminBundle:Admin:sideMenu")) }}
 
         <footer>
-                <hr />
-                <p><strong>Copyright &copy; 2011 Website Admin</strong></p>
-                <p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
+            <hr />
+            <p><strong>Copyright &copy; 2013 Johanny Clerc-Renaud</strong></p>
+            <p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
         </footer>
     </aside><!-- end of sidebar -->
     
-    {% block core_body %}{% endblock %}
+    <section id="main" class="column">
+        <!-- TODO intégrer les flashs messages ici -->
+        {% block core_body %}{% endblock %}
+    </section>
 {% endblock %}
 
 {% block javascripts %}

@@ -1,0 +1,16 @@
+{% extends "KafeAdminBundle::layout.html.twig" %}
+
+{% block fil_ariane %}
+    <div class="breadcrumb_divider"></div>
+    <a class="current">Ajouter un Bustier</a>
+{% endblock %}
+
+{% block core_body %}
+    <article class="module fullwidth_quarter">
+        <header><h3>Ajouter un Bustier</h3></header>
+        <form method="post" {{ form_enctype(form) }}>
+            {{ form_widget(form) }}
+            <input type="submit" class="btn btn-primary" />
+        </form>
+    </article>
+{% endblock %}
