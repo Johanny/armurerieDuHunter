@@ -1,3 +1,7 @@
 kafe_armuremanager_bustier_ajouter:
     pattern: bustier/ajouter
     defaults: { _controller: KafeArmureManagerBundle:Bustier:ajouter }
+    
+kafe_armuremanager_tete_ajouter:
+    pattern: tete/ajouter
+    defaults: { _controller: KafeArmureManagerBundle:Tete:ajouter }

@@ -1,0 +1,15 @@
+{% extends 'KafeAdminBundle::layout.html.twig' %}
+
+{% block fil_ariane %}
+    <div class="breadcrumb_divider"></div>
+    <a class="current">{{ breadcrumb_text }}</a>
+{% endblock %}
+
+{% block core_body %}
+    <article class="module width_3_quarter">
+        <header><h3>{{ breadcrumb_text }}</h3></header>
+        <div class="module_content">
+            {% include 'KafeArmureManagerBundle:Armure:armorPieceForm.html.twig' %}
+        </div>
+    </article>
+{% endblock %}

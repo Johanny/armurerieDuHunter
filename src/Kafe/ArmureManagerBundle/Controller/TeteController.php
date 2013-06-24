@@ -4,15 +4,15 @@ namespace Kafe\ArmureManagerBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-use Kafe\ArmureManagerBundle\Entity\Bustier;
-use Kafe\ArmureManagerBundle\Form\BustierType;
+use Kafe\ArmureManagerBundle\Entity\Tete;
+use Kafe\ArmureManagerBundle\Form\TeteType;
 
 /**
- * Controller permettant de gérer les bustiers
- * 
+ * Description of TeteController
+ *
  * @author Johanny
  */
-class BustierController extends Controller
+class TeteController extends Controller
 {
     
     /**
@@ -21,17 +21,17 @@ class BustierController extends Controller
      */
     public function ajouterAction()
     {
-        $bustier = new Bustier();
-        $form = $this->createForm(new BustierType, $bustier);
+        $tete = new Tete();
+        $form = $this->createForm(new TeteType, $tete);
         
-        $breadcrumbText = 'Ajouter un Bustier';
+        $breadcrumbText = 'Ajouter une Tête';
         
         $request = $this->getRequest();
         if( $request->getMethod() == 'POST' ) {
             $form->bind($request);
             if ($form->isValid()) {
                 $em = $this->getDoctrine()->getManager();
-                $em->persist($bustier);
+                $em->persist($tete);
                 $em->flush();
                 return $this->redirect($this->generateUrl('kafe_admin_homepage'));
             }
@@ -42,5 +42,6 @@ class BustierController extends Controller
             'breadcrumb_text' => $breadcrumbText
         ));
     }
-
 }
+
+?>
