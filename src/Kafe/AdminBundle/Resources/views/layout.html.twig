@@ -12,7 +12,7 @@
 {% block body %}
     <header id="header">
         <hgroup>
-            <h1 class="site_title"><a href="index.html">Admin - Armurerie du Hunter</a></h1>
+            <h1 class="site_title"><a href="{{ path('kafe_admin_homepage') }}">Admin - Armurerie du Hunter</a></h1>
             <h2 class="section_title">{% block title_page %}{% endblock %}</h2>
         </hgroup>
     </header> <!-- end of header bar -->
@@ -24,18 +24,13 @@
         </div>
         <div class="breadcrumbs_container">
             <article class="breadcrumbs">
-                <a href="index.html">Admin</a> 
+                <a href="{{ path('kafe_admin_homepage') }}">Admin</a>
                 {% block fil_ariane %}{% endblock %}
             </article>
         </div>
     </section><!-- end of secondary bar -->
     
     <aside id="sidebar" class="column">
-        <form class="quick_search">
-            <input type="text" value="Quick Search" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
-        </form>
-            
-        <hr/>
         
         {{ render(controller("KafeAdminBundle:Admin:sideMenu")) }}
 
@@ -44,7 +39,7 @@
             <p><strong>Copyright &copy; 2013 Johanny Clerc-Renaud</strong></p>
             <p>Theme by <a href="http://www.medialoot.com">MediaLoot</a></p>
         </footer>
-    </aside><!-- end of sidebar -->
+    </aside>
     
     <section id="main" class="column">
         <!-- TODO intégrer les flashs messages ici -->

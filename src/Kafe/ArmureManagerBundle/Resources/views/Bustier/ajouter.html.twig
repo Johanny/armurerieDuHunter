@@ -1,4 +1,4 @@
-{% extends "KafeAdminBundle::layout.html.twig" %}
+{% extends 'KafeAdminBundle::layout.html.twig' %}
 
 {% block fil_ariane %}
     <div class="breadcrumb_divider"></div>
@@ -6,11 +6,10 @@
 {% endblock %}
 
 {% block core_body %}
-    <article class="module fullwidth_quarter">
+    <article class="module width_3_quarter">
         <header><h3>Ajouter un Bustier</h3></header>
-        <form method="post" {{ form_enctype(form) }}>
-            {{ form_widget(form) }}
-            <input type="submit" class="btn btn-primary" />
-        </form>
+        <div class="module_content">
+            {% include 'KafeArmureManagerBundle:Armure:armorPieceForm.html.twig' %}
+        </div>
     </article>
 {% endblock %}

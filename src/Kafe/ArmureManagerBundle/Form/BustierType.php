@@ -11,10 +11,7 @@ class BustierType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('nom', 'text')
-            ->add('defenseMinimale', 'text')
-            ->add('defenseMaximale', 'text')
-            ->add('resistancesElementaires', new ResistancesElementairesType() )
+            ->add('statistiquesArmure', new StatistiquesArmureType() )
         ;
     }
 

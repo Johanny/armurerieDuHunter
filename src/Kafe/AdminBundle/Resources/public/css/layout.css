@@ -44,7 +44,7 @@ header#header h1.site_title, header#header h2.section_title {
     margin: 0;
     font-size: 22px;
     display: block;
-    width: 23%;
+    width: 335px;
     height: 55px;
     font-weight: normal;
     text-align: left;
@@ -97,7 +97,7 @@ section#secondary_bar {
 
 section#secondary_bar .user {
     float: left;
-    width: 23%;
+    width: 335px;
     height: 38px;
 }
 
@@ -193,7 +193,7 @@ article.breadcrumbs {
 /* Sidebar */
 
 aside#sidebar {
-    width: 23%;
+    width: 335px;
     background: #E0E0E3 url(../images/sidebar.png) repeat;
     float: left;
     min-height: 500px;
@@ -417,7 +417,8 @@ section#main {
 
 .module_content {
     margin: 10px 20px;
-    color: #666;}
+    color: #666;
+}
 
 /* Module Widths */
 
@@ -442,50 +443,6 @@ section#main {
     margin-right: 0;
     float: left;
 }
-
-/* Stats Module */
-
-.stats_graph {
-    width: 64%;
-    float: left;
-}
-
-.stats_overview {
-    background: #F6F6F6;
-    border: 1px solid #ccc;
-    float: right;
-    width: 26%;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-}
-
-.overview_today, .overview_previous {
-    width: 50%;
-    float: left;}
-
-.stats_overview p {
-    margin: 0; padding: 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 0 1px 0 #fff;
-}
-
-.stats_overview p.overview_day {
-    font-size: 12px;
-    font-weight: bold;
-    margin: 6px 0;
-}
-
-.stats_overview p.overview_count {
-    font-size: 26px;
-    font-weight: bold;
-    color: #333333;}
-
-.stats_overview p.overview_type {
-    font-size: 10px;
-    color: #999999;
-    margin-bottom: 8px}
 
 /* Content Manager */
 
@@ -640,6 +597,17 @@ input[type=submit].btn_post_message:hover {
     background-position: 0 -24px;
 }
 
+input[type=submit].btn_forger {
+    background: url(../images/btn_forger.png) repeat-x;
+    width : 83%;
+    height : 105px;
+    margin-top: 15px;
+    color : #e1cd9e;
+    text-shadow: 0 2px 10px #402f00;
+    font-family : -webkit-body, serif;
+    font-size : 1.8em;
+}
+
 .post_message {
     text-align: left;
     padding: 5px 0;
@@ -681,19 +649,9 @@ input[type=submit].btn_post_message:hover {
     overflow-y: scroll;
 }
 
-/* New/Edit Article Module */
+/* Forms */
 
-fieldset {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    background: #F6F6F6;
-    border: 1px solid #ccc;
-    padding: 1% 0%;
-    margin: 10px 0;
-}
-
-fieldset label {
+label {
     display: block;
     float: left;
     width: 200px;
@@ -706,7 +664,8 @@ fieldset label {
     text-transform: uppercase;
 }
 
-fieldset input[type=text] {
+input[type=text],
+input[type=number] {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -716,16 +675,26 @@ fieldset input[type=text] {
     -webkit-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
     -moz-box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
     box-shadow: inset 0 2px 2px #ccc, 0 1px 0 #fff;
-    padding-left: 10px;
+    padding-left: 1%;
     background-position: 10px 6px;
     margin: 0;
     display: block;
     float: left;
     width: 96%;
-    margin: 0 10px;
+    margin: 0 1%;
 }
 
-fieldset input[type=text]:focus {
+input[type=number].tiny {
+    width: 45.5%;
+}
+
+input[type=number].iconed_field {
+    width : 86%;
+    margin-top : 2px;
+}
+
+input[type=text]:focus,
+input[type=number]:focus {
     outline: none;
     border: 1px solid #77BACE;
     -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
@@ -733,7 +702,7 @@ fieldset input[type=text]:focus {
     box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
 }
 
-fieldset select {
+select {
     width: 96%;
     margin: 0 10px;
     border: 1px solid #bbb;
@@ -741,7 +710,7 @@ fieldset select {
     color: #666666;
 }
 
-fieldset textarea {
+textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -759,7 +728,7 @@ fieldset textarea {
     margin: 0 10px;
 }
 
-fieldset textarea:focus {
+textarea:focus {
     outline: none;
     border: 1px solid #77BACE;
     -webkit-box-shadow: inset 0 2px 2px #ccc, 0 0 10px #ADDCE6;
@@ -884,4 +853,51 @@ fieldset textarea:focus {
     padding: 10px 0;
     text-indent: 40px;
     font-size: 14px;
+}
+
+/* Commons */
+
+.side_margin_left_form {
+    margin : 0 0 0 1%;
+}
+
+.side_margin_right_form {
+    margin : 0 1% 0 0;
+}
+
+span.tiny {
+    width : 2%;
+    font-size : 2em;
+}
+
+div.field {
+    margin-top : 10px;
+}
+
+.left_form_2_tier {
+    width : 64%;
+}
+
+.left_form_tier {
+    width : 32%;
+}
+
+.right_form_tier {
+    width : 32%;
+}
+
+.right_form_2_tier {
+    width : 64%;
+}
+
+.icn_label {
+    width : 10%;
+}
+
+.float_left {
+    float : left;
+}
+
+.float_right {
+    float : right;
 }

@@ -1,0 +1,98 @@
+{{ form_start(form) }}
+
+{# Les erreurs générales du formulaire. #}
+{{ form_errors(form) }}
+
+<div class="side_margin_right_form left_form_2_tier float_left">
+    
+    <h3>Statistiques</h3>
+    
+    {# Génération du champ nom #}
+    <div class="field">
+    {{ form_label(form.statistiquesArmure.nom) }}
+    {{ form_widget(form.statistiquesArmure.nom) }}
+    {{ form_errors(form.statistiquesArmure.nom) }}
+    <div class="clear"></div>
+    </div>
+    
+    {# Génération des champs défense #}
+    <div class="field">
+        {{ form_label(form.statistiquesArmure.defenseMinimale, 'Défense') }}
+        <div class="clear"></div>
+        {{ form_widget(form.statistiquesArmure.defenseMinimale, { 'attr': {'class': 'tiny float_left'} }) }}
+        <span class="tiny float_left">~</span>
+        {{ form_widget(form.statistiquesArmure.defenseMaximale, {'attr': {'class': 'tiny float_right'} }) }}
+        {{ form_errors(form.statistiquesArmure.defenseMinimale) }}
+        {{ form_errors(form.statistiquesArmure.defenseMaximale) }}
+        <div class="clear"></div>
+    </div>
+    
+    {# Génération du champ rareté #}
+    <div class="field">
+    {{ form_label(form.statistiquesArmure.rarete) }}
+    {{ form_widget(form.statistiquesArmure.rarete) }}
+    {{ form_errors(form.statistiquesArmure.rarete) }}
+    <div class="clear"></div>
+    </div>
+    
+</div>
+
+<div class="side_margin_left_form right_form_tier float_left">
+
+    <h3>Résistances</h3>
+    
+    <div class="field">
+    {# {{ form_label(form.statistiquesArmure.resistanceFeu, '', {'label_attr': {'class': 'icn_feu'} }) }} #}
+    <img src="{{ asset('bundles/kafearmuremanager/images/icn_feu.png') }}" alt="Resistance Feu" class="icn_label float_left" />
+    {{ form_widget(form.statistiquesArmure.resistanceFeu, {'attr': {'class': 'iconed_field float_left'} }) }}
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="field">
+    <img src="{{ asset('bundles/kafearmuremanager/images/icn_eau.png') }}" alt="Resistance Eau" class="icn_label float_left" />
+    {{ form_widget(form.statistiquesArmure.resistanceEau, {'attr': {'class': 'iconed_field float_left'} }) }}
+    </div>
+    
+    <div class="clear"></div>
+
+    <div class="field">
+    <img src="{{ asset('bundles/kafearmuremanager/images/icn_glace.png') }}" alt="Resistance Glace" class="icn_label float_left" />
+    {{ form_widget(form.statistiquesArmure.resistanceGlace, {'attr': {'class': 'iconed_field float_left'} }) }}
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="field">
+    <img src="{{ asset('bundles/kafearmuremanager/images/icn_foudre.png') }}" alt="Resistance Foudre" class="icn_label float_left" />
+    {{ form_widget(form.statistiquesArmure.resistanceFoudre, {'attr': {'class': 'iconed_field float_left'} }) }}
+    </div>
+    
+    <div class="clear"></div>
+    
+    <div class="field">
+    <img src="{{ asset('bundles/kafearmuremanager/images/icn_dragon.png') }}" alt="Resistance Dragon" class="icn_label float_left" />
+    {{ form_widget(form.statistiquesArmure.resistanceDragon, {'attr': {'class': 'iconed_field float_left'} }) }}
+    </div>
+    
+    <div class="clear"></div>
+    
+    {{ form_errors(form.statistiquesArmure.resistanceFeu) }}
+    {{ form_errors(form.statistiquesArmure.resistanceEau) }}
+    {{ form_errors(form.statistiquesArmure.resistanceGlace) }}
+    {{ form_errors(form.statistiquesArmure.resistanceFoudre) }}
+    {{ form_errors(form.statistiquesArmure.resistanceDragon) }}
+    
+</div>
+ 
+{{ form_rest(form) }}
+
+<div class="clear"></div>
+
+<div>
+    <input type="submit" value="FORGER !" class="btn_forger float_left" />
+
+    <img src="{{ asset('bundles/kafearmuremanager/images/forgeron.png') }}" alt="Image du forgeron wyvernien" class="float_right" />
+</div>
+
+{{ form_end(form) }}
